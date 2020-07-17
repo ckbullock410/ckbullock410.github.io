@@ -146,7 +146,6 @@ input, select, textarea {
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
 		a:hover {
@@ -170,7 +169,7 @@ input, select, textarea {
 		font-size: 2.75em;
 		font-weight: 700;
 		line-height: 1.3;
-		margin: 0 0 1em 0;
+		margin: 0 0 1em 1em;
 		letter-spacing: -0.035em;
 	}
 
@@ -195,12 +194,12 @@ input, select, textarea {
 
 		}
 
-	h2, h3, h4, h5, h6 {
+	h2, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
 		margin: 0 0 2em 0;
-		text-transform: uppercase;
-		letter-spacing: 0.35em;
+		letter-spacing: 0.1em;
+		text-shadow: 1px 1px #555;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -212,7 +211,8 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1em;
+		font-size: 1.1em;
+		font-weight:600;
 	}
 
 	h4 {
@@ -2469,7 +2469,6 @@ input, select, textarea {
 		text-align: center;
 		text-decoration: none;
 		text-overflow: ellipsis;
-		text-transform: uppercase;
 		white-space: nowrap;
 	}
 
@@ -2596,11 +2595,15 @@ input, select, textarea {
 				width: 100%;
 				border-radius: 4px;
 				overflow: hidden;
+				filter: blur(0px);
+				-webkit-filter: blur(0px);
 			}
 
 				.tiles article > .image img {
 					display: block;
 					width: 100%;
+					object-fit: cover;
+					height:300px;					
 				}
 
 				.tiles article > .image:before {
@@ -2634,7 +2637,6 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2688,45 +2690,13 @@ input, select, textarea {
 				.tiles article > a h2 {
 					margin: 0;
 				}
-
-				.tiles article > a .content {
-					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
-					transition: max-height 0.5s ease, opacity 0.5s ease;
-					width: 100%;
-					max-height: 0;
-					line-height: 1.5;
-					margin-top: 0.35em;
-					opacity: 0;
-				}
-
 					.tiles article > a .content > :last-child {
 						margin-bottom: 0;
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
-			}
-
-			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
-			}
-
-			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
-			}
-
-			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
-			}
-
-			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
-			}
-
-			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #776;
+				opacity: 0.5;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -2734,6 +2704,8 @@ input, select, textarea {
 				-webkit-transform: scale(1.1);
 				-ms-transform: scale(1.1);
 				transform: scale(1.1);
+				filter: blur(2px);
+				-webkit-filter: blur(2px);
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
@@ -2829,18 +2801,21 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 2em 0 0.1em 0 ;
+		display: block;
+		font-weight: 600;
+		font-size:1.25em;
+		text-decoration: none;
 	}
-
+/*
 		#header .logo {
 			display: block;
 			border-bottom: 0;
 			color: inherit;
 			font-weight: 900;
-			letter-spacing: 0.35em;
+			font-size:1.5em;
 			margin: 0 0 2.5em 0;
 			text-decoration: none;
-			text-transform: uppercase;
 			display: inline-block;
 		}
 
@@ -2897,7 +2872,6 @@ input, select, textarea {
 						font-size: 0.8em;
 						font-weight: 900;
 						letter-spacing: 0.35em;
-						text-transform: uppercase;
 					}
 
 					#header nav ul li a[href="#menu"] {
@@ -2944,11 +2918,11 @@ input, select, textarea {
 						#header nav ul li a[href="#menu"]:hover:after {
 							opacity: 0;
 						}
-
+						*/
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 4em 0 0.1em 0 ;
+				padding: 1em 0 0.1em 0 ;
 			}
 
 				#header nav {
@@ -3327,3 +3301,28 @@ input, select, textarea {
 			}
 
 		}
+
+/* MINE */
+.tab {
+	color: #D00;
+}
+
+.tab:hover {
+	-moz-transition: color 0.2s ease;
+	-webkit-transition: color 0.2s ease;
+	-ms-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+	color: #585858;
+}
+
+.untab:hover {
+	-moz-transition: color 0.2s ease;
+	-webkit-transition: color 0.2s ease;
+	-ms-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+	color: #AAF
+}
+
+.title {
+	font-family: 'Seaweed Script';
+}
