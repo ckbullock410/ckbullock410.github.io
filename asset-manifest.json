@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "//ckbullock410.github.io/static/css/main.82a6251d.css",
+    "main.js": "//ckbullock410.github.io/static/js/main.d24860b7.js",
+    "static/js/453.5a64db6e.chunk.js": "//ckbullock410.github.io/static/js/453.5a64db6e.chunk.js",
+    "static/media/red_panda_happy.gif": "//ckbullock410.github.io/static/media/red_panda_happy.b16e0461e41aec2c5972.gif",
+    "static/media/red_panda_first.gif": "//ckbullock410.github.io/static/media/red_panda_first.47db7045575a4350acaa.gif",
+    "static/media/red_panda_angry.gif": "//ckbullock410.github.io/static/media/red_panda_angry.90bdf88cf3f17f6db54f.gif",
+    "index.html": "//ckbullock410.github.io/index.html",
+    "main.82a6251d.css.map": "//ckbullock410.github.io/static/css/main.82a6251d.css.map",
+    "main.d24860b7.js.map": "//ckbullock410.github.io/static/js/main.d24860b7.js.map",
+    "453.5a64db6e.chunk.js.map": "//ckbullock410.github.io/static/js/453.5a64db6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82a6251d.css",
+    "static/js/main.d24860b7.js"
+  ]
+}
